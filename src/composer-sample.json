@@ -23,7 +23,7 @@
         "roave/security-advisories": "dev-latest"
     },
     "scripts": {
-        "serve": "docker-compose up --build"˚
+        "serve": "docker-compose up --build"
     },
     "config": {
         "allow-plugins": {
