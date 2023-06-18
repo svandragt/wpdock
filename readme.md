@@ -2,6 +2,8 @@
 
 A proof of concept, this is WordPress running on top of SQLite served by PHP-FPM 8.1 behind Caddy.
 
+Note: the [`php-builtin-server`](https://github.com/svandragt/wpdock/tree/php-builtin-server) branch also removes Docker and the webserver as dependencies.
+
 Setup:
 
 - Copy `wp-config-sample.php` to `wp-config.php` and make changes to the salts and database info. As far as I can tell, any database credentials will work fine / be ignored.
