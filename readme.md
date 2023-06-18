@@ -1,6 +1,6 @@
 # WPDock - WordPress SQLite over Docker
 
-A proof of concept, this is WordPress running on top of SQLite served by PHP-FPM 8.1 behind Caddy.
+A proof of concept, this is WordPress running on top of SQLite served by PHP-FPM 8.1 behind Caddy. This removes a MySQL container as a dependency.
 
 Note: the [`php-builtin-server`](https://github.com/svandragt/wpdock/tree/php-builtin-server) branch also removes Docker and the webserver as dependencies.
 
