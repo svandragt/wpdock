@@ -23,7 +23,7 @@
         "roave/security-advisories": "dev-latest"
     },
     "scripts": {
-        "serve": "docker-compose up --build",
+        "serve": "pushd .. && php -S localhost:9000 -t src/ && popd"
     },
     "config": {
         "allow-plugins": {
