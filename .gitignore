@@ -1,0 +1,10 @@
+.idea
+composer.lock
+composer.json
+vendor
+wp-config.php
+wordpress
+src/content/database/
+src/content/*plugins/
+src/content/themes/
+src/content/upgrade/
