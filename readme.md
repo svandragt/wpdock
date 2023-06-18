@@ -1,6 +1,6 @@
-# WPDock - WordPress SQLite over Docker
+# WPlocal - WordPress Sqlite served by the builtin PHP webserver
 
-A proof of concept, this is WordPress running on top of SQLite served by PHP-FPM 8.1 behind Caddy.
+A proof of concept, this is WordPress running on top of SQLite served by PHP's builtin webserver!.
 
 Setup:
 
