@@ -1,0 +1,57 @@
+{
+    "name": "svandragt/wpdock",
+    "description": "WordPress Docker spinup",
+    "license": "GPL",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Sander van Dragt",
+            "email": "sander@vandragt.com"
+        }
+    ],
+    "require": {
+        "ext-gettext": "*",
+        "ext-mysqli": "*",
+        "ext-simplexml": "*",
+        "ext-sqlite3": "*",
+        "johnpbloch/wordpress-core": "^6.2",
+        "johnpbloch/wordpress-core-installer": "^2.0",
+        "wpackagist-plugin/sqlite-database-integration": "2.1.1",
+        "wpackagist-theme/twentytwentythree": "*"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
+    },
+    "scripts": {
+        "serve": "docker-compose up --build",
+    },
+    "config": {
+        "allow-plugins": {
+            "johnpbloch/wordpress-core-installer": true,
+            "composer/installers": true
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org",
+            "only": [
+                "wpackagist-plugin/*",
+                "wpackagist-theme/*"
+            ]
+        }
+    ],
+    "extra": {
+        "installer-paths": {
+            "content/mu-plugins/{$name}/": [
+                "type:wordpress-muplugin"
+            ],
+            "content/plugins/{$name}/": [
+                "type:wordpress-plugin"
+            ],
+            "content/themes/{$name}/": [
+                "type:wordpress-theme"
+            ]
+        }
+    }
+}
