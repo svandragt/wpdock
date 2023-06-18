@@ -4,7 +4,8 @@ A proof of concept, this is WordPress running on top of SQLite served by PHP-FPM
 
 Setup:
 
-- Copy wp-config.sample.php to wp-config.php and make changes to the salts and database info. As far as I can tell, any database credentials will work fine / be ignored.
+- Copy `wp-config-sample.php` to `wp-config.php` and make changes to the salts and database info. As far as I can tell, any database credentials will work fine / be ignored.
+- Copy `composer-sample.json` to `composer.json` and add your required plugins/themes.
 - run `docker-compose up --build` to create the containers
 - open https://localhost and accept the security warning, follow the installation to get a working WP install.
 
