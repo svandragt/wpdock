@@ -1,6 +1,6 @@
 # WPDock - WordPress environments with reduced dependencies.
 
-A proof of concept, the `main` branch is WordPress running on top of MariaDB served by PHP-FPM 8.1 behind Caddy. 
+A proof of concept, the `main` branch is WordPress running on top of MariaDB served by PHP-FPM 8.1 behind Caddy, on Docker containers.
 
 Alternative ways:
   1. the [`sqlite`](https://github.com/svandragt/wpdock/tree/php-builtin-server) branch  removes MariaDB as dependencies.
