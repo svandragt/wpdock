@@ -8,9 +8,9 @@ Alternative ways:
 
 Setup:
 
-- Copy `wp-config-sample.php` to `wp-config.php` and make changes to the salts and database info. 
+- Copy `wp-config-sample.php` to `wp-config.php` and **make changes to the salts and database info**. 
 - Copy `composer-sample.json` to `composer.json` and add your required plugins/themes.
-- Copy `.env-sample` to `.env` and add your passwords.
+- Copy `.env-sample` to `.env` and **update all the values**.
 - run `docker-compose up --build` to create the containers
 - open https://localhost and accept the security warning, follow the installation to get a working WP install.
 
