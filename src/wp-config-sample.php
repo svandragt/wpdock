@@ -1,8 +1,8 @@
 <?php
-define( 'DB_NAME', 'database_name_here' );
-define( 'DB_USER', 'username_here' );
-define( 'DB_PASSWORD', 'password_here' );
-define( 'DB_HOST', 'localhost' );
+define( 'DB_NAME', $_ENV['MYSQL_DATABASE'] );
+define( 'DB_USER', $_ENV['MYSQL_USER'] );
+define( 'DB_PASSWORD', $_ENV['MYSQL_PASSWORD'] );
+define( 'DB_HOST', $_ENV['MYSQL_HOST'] );
 define( 'DB_CHARSET', 'utf8' );
 define( 'DB_COLLATE', '' );
 

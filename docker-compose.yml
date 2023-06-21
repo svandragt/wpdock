@@ -26,6 +26,17 @@ services:
     image: php:fpm
     volumes:
       - ./src:/srv/app
+    env_file:
+      - .env
+    environment:
+      MYSQL_HOST: mariadb
+
+  mariadb:
+    container_name: wpdock-db
+    image: mariadb
+    restart: unless-stopped
+    env_file:
+      - .env
 
 volumes:
   vendor:

@@ -16,7 +16,6 @@
         "ext-sqlite3": "*",
         "johnpbloch/wordpress-core": "^6.2",
         "johnpbloch/wordpress-core-installer": "^2.0",
-        "wpackagist-plugin/sqlite-database-integration": "2.1.1",
         "wpackagist-theme/twentytwentythree": "*"
     },
     "require-dev": {
