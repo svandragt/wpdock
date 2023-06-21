@@ -2,8 +2,9 @@
 
 A proof of concept, this is WordPress running on top of MariaDB served by PHP-FPM 8.1 behind Caddy. 
 
-Note: the [`sqlite`](https://github.com/svandragt/wpdock/tree/php-builtin-server) branch  removes MariaDB as dependencies.
-Note: the [`php-builtin-server`](https://github.com/svandragt/wpdock/tree/php-builtin-server) branch also removes Docker and the webserver as dependencies, running wp on top of PHP only.
+Alternative ways:
+  1. the [`sqlite`](https://github.com/svandragt/wpdock/tree/php-builtin-server) branch  removes MariaDB as dependencies.
+  2. the [`php-builtin-server`](https://github.com/svandragt/wpdock/tree/php-builtin-server) branch also removes Docker and the webserver as dependencies, running wp on top of PHP only.
 
 Setup:
 
